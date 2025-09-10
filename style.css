@@ -112,6 +112,7 @@ label {
     grid-template-areas: "div div" 
                          "div div"
                          "div div";
+    box-shadow: 2px 2px rgb(0 0 0 / 0.3);
 }
 
 #container p {
