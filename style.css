@@ -1,8 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "norse";
     src: url("./fonts/Norsebold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
+}
+
+.contentHeader {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: grey;
 }
 
 header {
@@ -12,18 +23,22 @@ header {
 }
 .addBook {
     border: none;
-    background-color: rgb(106, 165, 106);
-    color: white;
-    width: 6rem;
-    height: 3rem;
+    background-color: rgb(44, 147, 44);
+    color: brown;
+    width: 8rem;
+    height: 4rem;
     border-radius: 5px;
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 25px;
     font-family: norse;
+    display: grid;
+    justify-self: end;
+    margin: 0 10px 0 0;
+    align-self: center;
+    align-items: center;
 }
 .addBook:hover {
     background-color:  rgb(66, 159, 66);
-    color: brown;
+    color: white;
 }
 
 #myDialog {
@@ -131,7 +146,7 @@ label {
   justify-self: center;
   border-radius: 10px;
   align-items: center;
-  color: white;
+  color: brown;
   font-family: norse;
   background-color: rgb(106, 165, 106);
   font-size: 16px;
@@ -142,7 +157,7 @@ label {
 }
 
 #container button:hover {
-    color: brown;
+    color: white;
     background-color: rgb(66, 159, 66);
 }
 

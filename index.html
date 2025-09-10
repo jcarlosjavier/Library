@@ -8,8 +8,10 @@
    
 </head>
 <body>
-    <header>My Library</header>
-    <button class="addBook" id="addBook">Add Book</button>
+    <div class="contentHeader">
+        <header>My Library</header>
+        <button class="addBook" id="addBook">Add Book</button>
+    </div>
     <div id="container"></div>
     <dialog id="myDialog" closedby="any" >
         <form method="dialog" id="myform" class="myform">
@@ -19,7 +21,7 @@
             <input type="text" name="author" placeholder=" Author" id="author" required>             
             <label for="pages">Pages</label>
             <input type="number" name="pages" placeholder=" Pages" id="pages" required>
-            <label for="read" class="readLabel">Read</label>
+            <label for="read" class="readLabel">Have you read this book?</label>
             <input type="checkbox" name="read" id="read">
             <button type="submit" id="create" >Create Book</button>
         </form>
