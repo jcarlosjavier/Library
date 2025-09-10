@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "norse";
+    src: url("./fonts/Norsebold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+header {
+    color: brown;
+    font-size: 5em;
+    font-family: norse;
+}
+.addBook {
+    border: none;
+    background-color: rgb(106, 165, 106);
+    color: white;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: norse;
+}
+.addBook:hover {
+    background-color:  rgb(66, 159, 66);
+    color: brown;
+}
+
+#myDialog {
+    border: none;
+    background-color: rgb(237, 234, 219);
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 0.3);
+}
+
+.myform {
+    display: grid;
+    width: 30rem;
+    height: 25rem;
+}
+
+input {
+    border-radius: 10px;
+    background-color: rgb(218, 235, 251);
+}
+
+input:invalid {
+  border: none;
+  outline: 2px solid rgb(247, 219, 111);
+  border-radius: 4px;
+}
+
+input:focus {
+    border: none;
+    outline: 2px solid rgb(116, 250, 228);
+    border-radius: var(--border-radius);
+    box-shadow: 4px 5px 5px rgba(128, 128, 128, 0.4);
+}
+
+label {
+    display: grid;
+    align-items:self-end;
+    font-size: 25px;
+    font-family: norse;
+    color: brown;
+}
+
+.readLabel{
+    justify-content: center;
+}
+
+#read {
+    height: 1.5rem;
+    width: 1rem;
+    display: grid;
+    justify-self: center;
+}
+
+#create {
+    border: none;
+    background-color: rgb(50, 226, 214);
+    width: 15rem;
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    border-radius: 15px;
+    box-shadow: 0 1px rgb(0 0 0 / 0.3);
+    font-size: 15px;
+}
+
+#create:hover {
+    background-color: aqua;
+    color: brown;
+    font-size: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; 
+}
+
+#container div  {
+    border: 1px solid black;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(250, 237, 185);
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    grid-template-areas: "div div" 
+                         "div div"
+                         "div div";
+}
+
+#container p {
+    display: grid;
+    margin:20px 10px 0  10px;
+    grid-area: div;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#container button {
+  width: 4rem;
+  height: 3rem;
+  display: grid;
+  justify-self: center;
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  font-family: norse;
+  background-color: rgb(106, 165, 106);
+  font-size: 16px;
+  align-self: self-end;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 1px 1px rgb(0 0 0 / 0.5);
+}
+
+#container button:hover {
+    color: brown;
+    background-color: rgb(66, 159, 66);
+}
+
